@@ -4,24 +4,23 @@ plugins {
 }
 
 java {
-    sourceCompatibility = 11
+    sourceCompatibility = 8
 }
 
-group = 'com.epam'
+group = 'org.gradle'
 version = '1.3.5'
 
 repositories {
- mavenCentral()
+    mavenCentral()
+
 }
 
 publishing {
     publications {
         maven(MavenPublication) {
-
-            groupId = 'com.epam'
+            groupId = 'org.gradle'
             artifactId = 'utils'
             version = '1.3.5'
-
 
             from components.java
         }
@@ -29,7 +28,7 @@ publishing {
 }
 
 dependencies {
-    implementation("org.apache.commons:commons-lang3:3.10")
+    implementation('org.apache.commons:commons-lang3:3.12.0')
 }
 
 jar {

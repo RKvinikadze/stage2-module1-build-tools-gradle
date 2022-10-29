@@ -1,4 +1,4 @@
-group='com.epam'
+group='org.gradle'
 version='1.0'
 
 repositories {
@@ -6,7 +6,7 @@ repositories {
 }
 
 dependencies {
-    implementation(":utils")
+    implementation project(":utils")
 }
 
 test {

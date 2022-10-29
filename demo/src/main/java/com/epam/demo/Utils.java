@@ -6,6 +6,6 @@ import com.epam.utils.StringUtils;
 
 public class Utils {
     public static boolean isAllPositiveNumbers(List<String> args) {
-        return args.stream().allMatch(String::StringUtils);
+        return args.stream().allMatch(StringUtils::isPositiveNumber);
     }
 }
